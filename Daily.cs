@@ -13,7 +13,7 @@ public class Daily : MonoBehaviour
     void Start()
     {
         checkUser();
-        
+        //hello
         DateTime nowDate = DateTime.Now;
         int day = PlayerPrefs.GetInt("day");
         int month = PlayerPrefs.GetInt("month");
