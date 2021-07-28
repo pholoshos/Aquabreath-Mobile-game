@@ -20,12 +20,12 @@ public class Daily : MonoBehaviour
         int year = PlayerPrefs.GetInt("year");
         DateTime  date = new DateTime(year,month,day);
         
-        Debug.Log(nowDate);
-        Debug.Log(date);
-        int days = (date.Day -  nowDate.Day)*-1+1;
+        
+        int days = (date.Day -  nowDate.Day)*-1;
+        //Debug.Log(date);
         if(nowDate > date){ 
             if(tasks.Length > days){
-                taskForToday = tasks[days-1];
+                taskForToday = tasks[days];
 
                 dailyTaskNumberText.text ="challange "+days;
                 dailyTaskText.text = taskForToday;
@@ -39,7 +39,7 @@ public class Daily : MonoBehaviour
         
     }
     public void checkUser(){
-        if(PlayerPrefs.GetInt("userSet") == 1){
+        if(PlayerPrefs.GetInt("setUser") == 1){
             Debug.Log("User active");
             loadTask();
         }else{

@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 0}
-  m_SizeDelta: {x: 142.7354, y: 135.9094}
+  m_AnchoredPosition: {x: 8, y: -25}
+  m_SizeDelta: {x: 199.6443, y: 190.0968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182016982
 MonoBehaviour:
@@ -286,11 +286,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasks:
-  - goto
-  - sds
-  - sd
-  - sd
-  - sdd
+  - Use leftover dishwater to water your pants, it's organic
+  - prevent water pollution by scrapping food off your plate and putting them into
+    the waste, instead of washing them down the drain
+  - Wash your hands with water from cold tap not hot to save water and energy
+  - Take a shower for less than 5 minutes to save water.
+  - save water when flushing the toilet by  using smaller button or lifting the handle
+    up once your waste  is cleared away as it stops the cistern refilling completely
+  - do not leave the tap running when brushing your teeth to save water.
+  - Do not dispose of household chemical or cleaning agents down the sink or toilet
+  - Avoid using the toilet as a waterbasket
   dailyTaskText: {fileID: 654633574}
   pointText: {fileID: 0}
   dailyTaskNumberText: {fileID: 1411210114}
@@ -686,7 +691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -85}
+  m_AnchoredPosition: {x: 13, y: -125}
   m_SizeDelta: {x: 116.3295, y: 53.8351}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896402970

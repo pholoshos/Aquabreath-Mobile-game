@@ -286,10 +286,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedOption: 0
+  optionsText:
+  - {fileID: 560592034}
+  - {fileID: 654633574}
+  - {fileID: 713235496}
+  level: 0
   correctOption: 1
   pointText: {fileID: 1543024156}
+  questionText: {fileID: 1495903283}
   levelClear: 0
   points: 0
+  questions:
+  - 'Use a  reusable  _______ when brushing your teeth '
+  - Saving water is good for the _________
+  - The best water to water your garden is in ________
+  - The best way to water your garden is to use _________
+  - ' In summer when we want to cool down  we __________'
+  - ' How many cups of water per day should  we drink ________'
+  - purify water  by _______
+  - When should you water your plants _________
+  - When we wash our hands  we __________
+  - Is water part of our body?
+  - When we wash our fruits we use a _________
 --- !u!4 &423017449
 Transform:
   m_ObjectHideFlags: 0
