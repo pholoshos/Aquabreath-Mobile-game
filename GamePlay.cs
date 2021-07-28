@@ -17,6 +17,7 @@ public class GamePlay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        level = PlayerPrefs.GetInt("level");
         setOptions();
         pointText.text = points+" points";
     }
@@ -62,6 +63,7 @@ public class GamePlay : MonoBehaviour
             points += 10;
             pointText.text = points+" points";
             level += 1;
+            PlayerPrefs.SetInt("level",level);
             optionsText[0].text = levelOptions[level].option1;
             optionsText[1].text = levelOptions[level].option2;
             optionsText[2].text = levelOptions[level].option3;
