@@ -22,12 +22,12 @@ public class Daily : MonoBehaviour
         
         Debug.Log(nowDate);
         Debug.Log(date);
-        int days = (date.Day -  nowDate.Day)*-1;
+        int days = (date.Day -  nowDate.Day)*-1+1;
         if(nowDate > date){ 
             if(tasks.Length > days){
-                taskForToday = tasks[days];
+                taskForToday = tasks[days-1];
 
-                dailyTaskNumberText.text ="challange "+day.ToString();
+                dailyTaskNumberText.text ="challange "+days;
                 dailyTaskText.text = taskForToday;
 
             }
