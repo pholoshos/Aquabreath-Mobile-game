@@ -57,7 +57,7 @@ public class GamePlay : MonoBehaviour
         
     }
     void check(){
-        correctOption = Options[level].correctOption;
+        correctOption = levelOptions[level].correctOption;
         if(selectedOption == correctOption ){
             
             points += 10;
