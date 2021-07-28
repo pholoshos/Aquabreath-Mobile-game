@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GamePlay : MonoBehaviour
 {
     public int selectedOption;
+    public Text[] optionsText;
     public int level;
     public int correctOption = 1;
     public Text pointText;
@@ -22,7 +23,7 @@ public class GamePlay : MonoBehaviour
 
     // Update is called once per frame
     public void  setOptions(){
-
+        //add options for each option 1, to 3 and its correct answer
         levelOptions[0].option1 = "Cup";
         levelOptions[0].option2 = "Paper Bag";
         levelOptions[0].option3 = "Car";
@@ -56,10 +57,17 @@ public class GamePlay : MonoBehaviour
     }
     void check(){
         correctOption = Options[level].correctOption;
-        if(selectedOption == correctOption && levelClear == false){
+        if(selectedOption == correctOption ){
+            
             points += 10;
             pointText.text = points+" points";
-            levelClear = true;
+            level += 1;
+            optionsText[0].text = levelOptions[level].option1;
+            optionsText[1].text = levelOptions[level].option2;
+            optionsText[2].text = levelOptions[level].option3;
+            
+        }else{
+
         }
     }
     public void option2(){
